@@ -17,6 +17,10 @@ h3 {
   padding-bottom: 10px;
 }
 
+h4 {
+  margin-top: 10px;
+}
+
 header {
 	height: 25px;
 	background: #2f2235;
@@ -25,6 +29,10 @@ header {
 	align-items: center;
 	color: #fff;
 	justify-content: space-between;
+}
+
+header hr {
+	display: none;
 }
 
 .logo {
@@ -60,6 +68,9 @@ hr {
 .accordion-main {
 	width: 90%;
 	margin: 50px auto 0 auto;
+	display: grid;
+	grid-template-rows: repeat(2, auto);
+	grid-template-columns: repeat(4, 25%);
 }
 
 .accordion-header {
@@ -67,17 +78,18 @@ hr {
 	align-items: center;
 }
 
-.accordion-panels {
+.panel {
 	border-left: 1px solid #D1D2D3;
 	border-bottom: 1px solid #D1D2D3;
 	border-right: 1px solid #D1D2D3;
+	grid-row: 2;
+	grid-column: 1 / 5;
 }
 
 .tab {
 	font-size: 1rem;
 	border-top: none;
 	display: flex;
-	width: 25%;
 	height: 55px;
 	justify-content: center;
 	color: #666;
@@ -122,6 +134,11 @@ hr {
 
 .panel {
 	display: none;
+}
+
+.panel-info {
+	grid-row: 2;
+	grid-column: 1 / 5;
 }
 
 .panel.active {

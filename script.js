@@ -1,6 +1,6 @@
 const changeTab = (e, index) => {
-	const activeTab = document.getElementsByClassName('accordion-tabs')[0]
-		.getElementsByClassName('active')[0]
+	console.log(e, index)
+	const activeTab = document.querySelector('.tab.active')
 		.classList.remove('active');
 
 	e.target.classList.add('active');
@@ -16,8 +16,7 @@ for (let i = 0; i < tabs.length; i++) {
 
 const displayPanel = (index) => {
 	const panels = document.querySelectorAll('.panel');
-	const activePanel = document.getElementsByClassName('accordion-panels')[0]
-		.getElementsByClassName('active')[0]
+	const activePanel = document.querySelector('.panel.active')
 		.classList.remove('active');
 	
 	panels[index].classList.add('active');
