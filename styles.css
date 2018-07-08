@@ -83,6 +83,10 @@ hr {
 	border-left: none;
 }
 
+.tab:focus {
+	outline: none;
+}
+
 .tab-4 {
 	padding-right: 111px;
 }
