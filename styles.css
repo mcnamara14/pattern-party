@@ -1,0 +1,30 @@
+* {
+	font-family: 'Open Sans', sans-serif;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	height: 25px;
+	background: #2f2235;
+	padding: 20px 85px 20px 75px;
+	display: flex;
+	align-items: center;
+	color: #fff;
+	justify-content: space-between;
+}
+
+.logo {
+	font-size: 1.8rem;
+	line-height: 1;
+	text-transform: uppercase;
+	font-weight: 300;
+	color: #fff;
+}
+
+.logo span {
+	color: #34D1D1;
+}
