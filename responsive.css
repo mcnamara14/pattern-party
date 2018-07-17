@@ -64,6 +64,9 @@
 
 	.panel {
 		border-bottom: none;
+		flex-direction: column;
+		padding: 0;
+		margin-left: -1px;
 	}
 
 	.panel-1 {
@@ -106,5 +109,16 @@
 		display: flex !important;
 		border-bottom: 1px solid #D1D2D3 !important;
 		justify-content: flex-start !important;
+	}
+
+	.panel-img {
+		width: 99%;
+		height: 150px;
+	}
+
+	.panel-text {
+		padding: 20px;
+		width: 85%;
+		text-align: center;
 	}
 }
