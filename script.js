@@ -1,3 +1,5 @@
+// Accordion Tabs
+
 const changeTab = (e, index) => {
 	console.log(e, index)
 	const activeTab = document.querySelector('.tab.active')
@@ -21,3 +23,5 @@ const displayPanel = (index) => {
 	
 	panels[index].classList.add('active');
 }
+
+// Flexible Cards

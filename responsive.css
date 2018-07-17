@@ -21,11 +21,13 @@
 		margin-bottom: 15px;
 	}
 
-	.accordion-header {
+		/*  Accordion Tabs */
+
+	.header {
 		flex-direction: column;
 	}
 
-	.accordion-header hr {
+	.header hr {
 		width: 80px;
 		border-top: 1px solid #D1D2D3;
 	}
@@ -64,6 +66,9 @@
 
 	.panel {
 		border-bottom: none;
+		flex-direction: column;
+		padding: 0;
+		margin-left: -1px;
 	}
 
 	.panel-1 {
@@ -106,5 +111,27 @@
 		display: flex !important;
 		border-bottom: 1px solid #D1D2D3 !important;
 		justify-content: flex-start !important;
+	}
+
+	.panel-img {
+		width: 99%;
+		height: 150px;
+	}
+
+	.panel-text {
+		padding: 20px;
+		width: 85%;
+		text-align: center;
+	}
+
+
+	/*  Flexible Boxes */
+
+	.flexible-box-1, .flexible-box-2, .flexible-box-3, .flexible-box-4, .flexible-box-5, .flexible-box-6, .flexible-box-7 {
+		width: 100%;
+	}
+
+	.flexible-cards-top, .flexible-cards-middle, .flexible-cards-bottom {
+		flex-direction: column;
 	}
 }

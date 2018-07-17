@@ -73,7 +73,7 @@ hr {
 	grid-template-columns: repeat(4, 25%);
 }
 
-.accordion-header {
+.accordion-header, .flexible-cards-header {
 	display: flex;
 	align-items: center;
 }
@@ -143,4 +143,79 @@ hr {
 
 .panel.active {
 	display: flex;
+}
+
+.view-code {
+	padding: 10px 100px;
+	border: none;
+	background: #2F2235;
+	font-weight: 100;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1rem;
+	margin: 0 auto;
+	display: inherit;
+	margin-top: 30px;
+}
+
+
+.flexible-cards-main {
+	width: 90%;
+	margin: 50px auto 0 auto;
+}
+
+.flexible-cards-header {
+	margin-top: 100px;
+}
+
+.flexible-cards-top, .flexible-cards-middle, .flexible-cards-bottom {
+	display: flex;
+	justify-content: space-between;
+}
+
+.flexible-box-1 {
+	width: calc(66% - 30px);
+}
+
+.flexible-box-2 {
+	width: 33%;
+}
+
+.flexible-box-3 {
+	width: calc(33% - 30px);
+}
+
+.flexible-box-4 {
+	width: calc(33% - 30px);
+}
+
+.flexible-box-5 {
+	width: 33%;
+}
+
+.flexible-box-6 {
+	width: calc(33% - 30px);
+}
+
+.flexible-box-7 {
+	width: 66%;
+}
+
+.flexible-cards h3 {
+	border: 1px solid #d1d2d3;
+	padding-left: 20px;
+	height: 55px;
+	display: flex;
+	align-items: center;
+	margin-bottom: 0;
+}
+
+.flexible-img {
+	width: calc(100% - 2px);
+	height: 200px;
+	background: #eee;
+	border-bottom: 1px solid #d1d2d3;
+	border-left: 1px solid #d1d2d3;
+	border-right: 1px solid #d1d2d3;
+	border-top: 0;
 }
