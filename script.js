@@ -24,4 +24,16 @@ const displayPanel = (index) => {
 	panels[index].classList.add('active');
 }
 
-// Flexible Cards
+// Header Bar
+
+const activeDropdown = () => {
+	const nav = document.querySelector('nav');
+	const dropdown = document.querySelector('.mobile-dropdown');
+	const searchBox = document.querySelector('.search-box');
+	nav.style.display = 'flex';
+	searchBox.style.display = 'flex';
+	dropdown.classList.add('selected');
+}
+
+const headerBar = document.querySelector('.header-bar');
+headerBar.addEventListener('click', activeDropdown);

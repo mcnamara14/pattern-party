@@ -134,4 +134,72 @@
 	.flexible-cards-top, .flexible-cards-middle, .flexible-cards-bottom {
 		flex-direction: column;
 	}
+
+	/* Header Bar */
+
+	.search-box, nav {
+		display: none;
+	}
+
+	.search-box {
+    width: 80%;
+    height: 55px;
+    font-size: 1.2rem;
+    border: 1px solid #666;
+	}
+
+	nav {
+		text-align: left;
+		width: 83%;
+    flex-direction: column;
+    margin: 40px auto 15px auto;
+    line-height: 2rem;
+	}
+
+	.mobile-header {
+		display: flex;
+		justify-content: space-between;
+		align-content: center;
+		width: 100%;
+	}
+
+	.mobile-header h3 {
+    color: #666;
+    font-size: 1.5rem;
+    font-weight: 300;
+		display: block;
+	}
+
+	.mobile-dropdown.selected {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 130px;
+    flex-direction: column;
+    left: 0;
+    padding-bottom: 25px;
+    background: #eee;
+	}
+
+	.mobile-dropdown {
+		width: auto;
+	}
+
+	.mobile-dropdown a {
+    line-height: 4rem;
+	}
+
+	.header-bar .view-code {
+		margin-top: 375px;
+	}
 }
+
+@media only screen and (min-width: 700px) and (max-width: 1070px) {
+	.mobile-dropdown a {
+		font-size: 0.8rem;
+		text-align: center;	
+	}
+}
+
