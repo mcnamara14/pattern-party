@@ -30,9 +30,17 @@ const activeDropdown = () => {
 	const nav = document.querySelector('nav');
 	const dropdown = document.querySelector('.mobile-dropdown');
 	const searchBox = document.querySelector('.search-box');
-	nav.style.display = 'flex';
-	searchBox.style.display = 'flex';
-	dropdown.classList.add('selected');
+
+	if (nav.style.display === 'none' || !nav.style.display) {
+		nav.style.display = 'flex';
+		searchBox.style.display = 'flex';
+		dropdown.classList.add('selected');
+	} else {
+		nav.style.display = 'none';
+		searchBox.style.display = 'none';
+		dropdown.classList.remove('selected');
+	}
+
 }
 
 const headerBar = document.querySelector('.header-bar');
